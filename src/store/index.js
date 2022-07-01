@@ -1,16 +1,16 @@
 import { createStore } from "redux";
 
 //action creator
-const increment = () => {
-  type: "INCREMENT";
-};
+// const increment = () => {
+//   type: "INCREMENT";
+// };
 
-const decrement = () => {
-  type: "DECREMENT";
-};
+// const decrement = () => {
+//   type: "DECREMENT";
+// };
 
 //reducer
-const counteReducer = (state, action) => {
+const counteReducer = (state = { counter: 0 }, action) => {
   switch (action.type) {
     case "INCREMENT":
       return state + 1;
