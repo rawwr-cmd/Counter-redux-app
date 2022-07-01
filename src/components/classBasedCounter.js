@@ -31,7 +31,7 @@ class ClassCounter extends Component {
 
 const mapStateToProps = (state) => {
   //same as useSelector in functionalBasedComponent
-  console.log(state);
+//   console.log(state);
   return {
     counter: state.counter,
   };
@@ -39,7 +39,7 @@ const mapStateToProps = (state) => {
 
 //actionCreator
 const mapDispatchToProps = (dispatch) => {
-  console.log(dispatch);
+//   console.log(dispatch);
   return {
     increment: () => dispatch({ type: "INCREMENT" }),
     decrement: () => dispatch({ type: "DECREMENT" }),
